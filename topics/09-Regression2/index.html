@@ -63,7 +63,7 @@
 							<ul class="nav navbar-nav">
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-										Classification1
+										Regression2
 									</a>
 									<ul class="dropdown-menu" role="menu">
 										<li class="dropdown-header">Topics</li>
@@ -125,14 +125,6 @@
 											<a href="#01-Overview">Overview</a>
 										</li>
 										
-										<li >
-											<a href="#02-Logistic_Regression">Logistic Regression</a>
-										</li>
-										
-										<li >
-											<a href="#10-Practical">Practical</a>
-										</li>
-										
 									</ul>
 								</li>
 							</ul>
@@ -166,7 +158,7 @@
 		<!-- topic config -->
 		<div class="panel panel-info">
 			<div class="panel-heading">	
-				<h3 class="panel-title">Classification1</h3>
+				<h3 class="panel-title">Regression2</h3>
 			</div>
 			<div class="panel-body" style="color:gray">
 				
@@ -175,14 +167,14 @@
 				        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="width:170px">
 							<img class="km" src="topic.png" width="100%" alt="logo for topic"></div>
 				        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-							<span><p>Given labeled training data, develop models to classify new data based on what we have seen in the training data</p></span>
+							<span><p>We continue our introduction to regression, considering how to make it more robust.</p></span>
 							<ul>
 								
-								<li>Contrast with regression</li>
+								<li>Regularisation</li>
 								
-								<li>Classification metrics</li>
+								<li>Transformation of variables</li>
 								
-								<li>Classification using logistic regression</li>
+								<li>Regression in practice</li>
 								
 							</ul>
 						</div>
@@ -201,66 +193,26 @@
 	<span class=" fa  fa-book pull-left kmheading" style="font-size:200%"></span>
 	<div class="media-body">
 		<h4 class="media-heading kmheading">Overview</h4>
-		<span>Introduction to classification</span>
+		<span>This week we will continue our study of linear regression, which is one of the classic techniques</span>
 		<div></div>
 		<ul>
 			
-			<li>How classification differs from regression</li>
+			<li>Regression assumptions, and how-</li>
 			
-			<li>Classification metrics</li>
+			<li>to deal with heteroscedasticity and why it is a problem</li>
+			
+			<li>unrepresentative training data can lead to overfitting</li>
+			
+			<li>feature collinearity can be assessed</li>
+			
+			<li>Provide a worked example of forward selection of features, and interaction terms, for model building</li>
 			
 		</ul>
 		<ul class="pager">
 			
-		  	<li><a class="kmpill" href="01-Overview/08-01-Overview-Slides-Handout.pdf" >Handout</a></li>
+		  	<li><a class="kmpill" href="01-Overview/09-01-Overview-Slides-Handout.pdf" >Handout</a></li>
 			
-		  	<li><a class="kmpill" href="01-Overview/08-01-Overview-Slides-Presentation.pdf" >Presentation</a></li>
-			
-		</ul>
-	</div>
-</li>
-			
-				<li class="media">
-	<a class="kmaa" id="02-Logistic_Regression"></a>
-	<span class=" fa  fa-book pull-left kmheading" style="font-size:200%"></span>
-	<div class="media-body">
-		<h4 class="media-heading kmheading">Logistic Regression</h4>
-		<span>Introduction to classification, part 2</span>
-		<div></div>
-		<ul>
-			
-			<li>Logistic regression in practice - Iris dataset</li>
-			
-			<li>Logistic regression - how it works</li>
-			
-			<li>ROC curves and their usage</li>
-			
-			<li>Feature engineering, including correlation analysis</li>
-			
-		</ul>
-		<ul class="pager">
-			
-		  	<li><a class="kmpill" href="02-Logistic_Regression/08-02-Logistic_Regression-Slides-Handout.pdf" >Handout</a></li>
-			
-		  	<li><a class="kmpill" href="02-Logistic_Regression/08-02-Logistic_Regression-Slides-Presentation.pdf" >Presentation</a></li>
-			
-		</ul>
-	</div>
-</li>
-			
-				<li class="media">
-	<a class="kmaa" id="10-Practical"></a>
-	<span class=" glyphicon glyphicon-wrench pull-left kmheading" style="font-size:200%"></span>
-	<div class="media-body">
-		<h4 class="media-heading kmheading">Practical</h4>
-		<span>Practical session - using Python notebooks to a) investigate the use of PCA, b) to classify digits from scanned handwriting and c) to detect epilepsy using EED traces.</span>
-		<div></div>
-		<ul>
-			
-		</ul>
-		<ul class="pager">
-			
-		  	<li><a class="kmpill" href="10-Practical/00-Outline.html" >Open</a></li>
+		  	<li><a class="kmpill" href="01-Overview/09-01-Overview-Slides-Presentation.pdf" >Presentation</a></li>
 			
 		</ul>
 	</div>
