@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>dm25s1</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../style/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../../style/codehilite/css/default.css" rel="stylesheet">
+    <link href="../../../style/misc/css/module.css" rel="stylesheet">
+    <link href="../../../style/misc/css/practical.css" rel="stylesheet">
+
+	<script type="text/javascript"
+	  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+
+  </head>
+
+<body>
+
+	<!-- Fixed navbar -->
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			
+			
+	    	<div class="collapse navbar-collapse">
+
+				<ul class="nav navbar-nav navbar-left">
+					<!-- Moodle -->
+					<li>
+						<div class="navbar-header">
+							<a class="navbar-brand" href="https://moodle.wit.ie/course/view.php?id=217319" target="_blank"><img height="18pt" src="../../../style/misc/img/moodle_logo_on_blue.gif" /></a>
+						</div>						
+					</li>
+					<li>
+						<div class="navbar-header">
+							<a class="navbar-brand" href="" target="_blank"><img height="15pt" src="style/misc/img/slack_logo.png" /></a>
+						</div>						
+					</li>
+				</ul>
+
+	      		<ul class="nav navbar-nav navbar-right">
+
+					<!-- module home -->
+					<li>
+						<div class="navbar-header">
+							<a class="navbar-brand" href="../../../index.html"><span class="glyphicon glyphicon-home"></span></a>
+						</div>						
+					</li>
+					
+					<!-- topics -->
+	        		<li>
+						<div class="navbar-collapse collapse" id="b">
+							<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+										<span class="glyphicon glyphicon-list-alt"></span>
+									</a>
+									<ul class="dropdown-menu" role="menu">
+										<li class="dropdown-header">Topics</li>
+										
+									</ul>
+								</li>
+							</ul>
+						</div>			
+					</li>
+
+					<!-- resources -->
+	        		<li>
+						<div class="navbar-collapse collapse" id="b">
+							<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+										<span class="glyphicon glyphicon-th-list"></span>
+									</a>
+									<ul class="dropdown-menu" role="menu">
+										<li class="dropdown-header">Resources</li>
+										
+										<li >
+											<a href="../../../topics/11-Clustering/index.html#01-Overview_Hierarchical">Overview Hierarchical</a>
+										</li>
+										
+										<li >
+											<a href="../../../topics/11-Clustering/index.html#02-Partitional">Partitional</a>
+										</li>
+										
+										<li class="active">
+											<a href="../../../topics/11-Clustering/index.html#10-Practical">Practical</a>
+										</li>
+										
+									</ul>
+								</li>
+							</ul>
+						</div>			
+					</li>
+								
+					<!-- pages-->
+	        		<li>
+						<div class="navbar-collapse collapse" id="c">
+							<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+										<span>Resources</span
+									</a>
+									<ul class="dropdown-menu" role="menu">
+										
+										<li >
+											<a href="00-Outline.html">Outline</a>
+										</li>
+										
+										<li class="active">
+											<a href="01-Resources.html">Resources</a>
+										</li>
+										
+									</ul>
+								</li>
+							</ul>
+						</div>			
+					</li> 
+					
+	        	</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- contents -->
+	<div class="container">
+		
+		<ul class="pager">
+			
+			<li class="previous"><a href="00-Outline.html">&larr; Previous (Outline)</a></li>
+			
+			
+			
+			<li class="next disabled"><a>Next &rarr;</a></li>
+			
+		</ul>
+		
+		<h1>Clustering: k-means, Gaussian Mixtures, DBSCAN, AGNES, K-modes and K-prototypes</h1>
+<p>As with previous weeks, the working environment for this week's practicals is a
+set of <a href="http://jupyter-notebook.readthedocs.io/en/stable/">Jupyter</a> notebooks.</p>
+<p>Each of these notebooks should be downloaded as a text file and run using
+<code>jupyter-lab</code> or VS-code.</p>
+<p>The notebooks can be obtained from the following links:</p>
+<ul>
+<li><a href="files/Practical_A_KM_GMM.ipynb">Using a variety of clustering techniques on blob data</a></li>
+<li><a href="files/Practical_B_GMM_DBSCAN.ipynb">Use of GMM (soft) clustering</a></li>
+<li><a href="files/Practical_C_DigitsData_GMM_KM.ipynb">Clustering applied to the MNIST handwritten digits data</a></li>
+<li><a href="files/Practical_D_BlobScores_KM.ipynb">Using k-means to cluster generated blob data, while tracking inertia and silhouette scores</a></li>
+<li><a href="files/Practical_E_AGNES.ipynb">Comparing linkage functions on a simple dataset, using the AGNES hierarchical clustering algorithm</a></li>
+<li><a href="files/Practical_F_studentGrades_Kmodes.ipynb">Using K-modes clustering on a small set of notional student grades</a></li>
+<li><a href="files/Practical_G_AutoMPG_KmodesPrototypes.ipynb">Using k-modes and k-prototypes clustering on MPG data used in R's ggplot2 demos</a></li>
+</ul>
+<p>Students should right-click and download each file to the same directory, and
+then follow the advice below.</p>
+<p>Each notebook is extensively annotated. Students are advised to run each
+notebook one-by-one, and to consider how they can contribute to their CA3
+attempts.</p>
+<h2>Installation</h2>
+<p>You may need to update your python packages by installing <code>hdbscan</code> and
+<code>python-graphviz</code>, using the following commands:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>conda install conda-forge::hdbscan
+
+conda install conda-forge::python-graphviz
+</code></pre></div></td></tr></table></div>
+
+<h2>Resources</h2>
+<p>The datafiles needed for the practicals can be obtained from here:</p>
+<ul>
+<li><a href="files/data/complexDataForClustering.npy">difficult dataset for clustering</a>;</li>
+<li><a href="files/data/studentGrades.csv">(notional) student grades</a>;</li>
+<li><a href="files/data/ggplot-mpg.csv">MPG data for cars on US market, 1990s-2000s</a>;</li>
+</ul>
+<p>Students should download these data files to a <code>data/</code> folder (they might need
+to create this first) that is placed in the same folder as where they
+downloaded the notebooks.</p>
+<p>There is also a <a href="files/clusSupport.zip">zipped folder of shared python support
+functions</a>.  This file should be unzipped and its folder
+should be placed in the same folder as where they placed the notebooks.</p>
+		
+		<ul class="pager">
+			
+			<li class="previous"><a href="00-Outline.html">&larr; Previous (Outline)</a></li>
+			
+			
+			
+			<li class="next disabled"><a>Next &rarr;</a></li>
+			
+		</ul>
+
+	</div>
+	
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../../../style/bootstrap/js/bootstrap.min.js"></script>
+	
+  </body>
+</html>
